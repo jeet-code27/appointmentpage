@@ -49,6 +49,32 @@
         .book-btn:hover {
             background-color: #1c5f91;
         }
+        .timing-container {
+            background-color: #f8e1e4;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .timing-title {
+            color: #2a7db7;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .timing-subtitle {
+            color: #1c5f91;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .timing-text {
+            margin-bottom: 5px;
+        }
+        .timing-special {
+            font-weight: bold;
+            color: #d9534f;
+        }
         @media (max-width: 768px) {
             .image-container {
                 margin-bottom: 20px;
@@ -81,7 +107,7 @@
 <body>
     <div class="container my-4">
         <div class="row">
-            <!-- Left Side - Images -->
+            <!-- Left Side - Images and Timing -->
             <div class="col-md-5 mb-4">
                 <div class="image-container">
                     <!-- First Image Placeholder -->
@@ -89,9 +115,25 @@
                         <img src="/images/mayur.jpg" alt="Mayur Children Hospital" class="img-fluid">
                     </div>
                 
-                    <!-- Second Image Placeholder -->
-                    <div class="border border-primary rounded p-3">
-                        <img src="/images/drmayur-timing.jpg" alt="Doctor Information" class="img-fluid">
+                    <!-- Timing Information (replacing second image) -->
+                    <div class="border border-primary rounded p-3 timing-container">
+                        <h3 class="timing-title">CONSULTATION TIMINGS</h3>
+                        
+                        <h4 class="timing-subtitle">MAYUR CHILD CARE CENTER</h4>
+                        <p class="timing-text"><strong>Monday - Saturday:</strong></p>
+                        <p class="timing-text">9:00 AM - 12:00 PM (Morning)</p>
+                        <p class="timing-text">5:00 PM - 8:30 PM (Evening)</p>
+                        
+                        <p class="timing-text"><strong>Sunday:</strong></p>
+                        <p class="timing-text">10:00 AM - 2:00 PM</p>
+                        <p class="timing-text timing-special">Evening: OFF</p>
+                        
+                        <h4 class="timing-subtitle">PARAS UROLOGY AND MULTI SPECIALITY HOSPITAL</h4>
+                        <p class="timing-text"><strong>Monday - Saturday:</strong></p>
+                        <p class="timing-text">12:00 PM - 1:00 PM</p>
+                        
+                        <p class="timing-text"><strong>Sunday:</strong></p>
+                        <p class="timing-text timing-special">OFF</p>
                     </div>
                 </div>
             </div>
